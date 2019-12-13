@@ -1,0 +1,50 @@
+---
+title: "SEP -- Assessment Data"
+author: "Brief prepared by Joseph Diodato (jdiodato@iu.edu)"
+date: "Fall 2019"
+output:
+  pdf_document: default
+---
+
+```{r, include = FALSE}
+library(tidyverse)
+```
+
+# RPS Data Analysis Template
+```{r, include = FALSE}
+centers <- c("Ashton",'Briscoe', 'Collins', 'Eigenmann', 'Forest', 
+             'Read', 'Spruce', 'Teter', 'USC', 'Wells', 'Willkie', 'Wright')
+```
+
+```{r, include = FALSE}
+df <- data.frame("Center" = centers)
+df$RA.Submissions <- NA
+df$RA.Numbers <- NA
+df$Staff.Submission.Rate <- NA
+df$Number.Students <- NA
+df$Percentage.Students <- NA
+# Create more columns as needed.
+```
+
+```{r, include = FALSE}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy), color = "blue")
+```
+
+```{r, include = FALSE}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy)) + 
+  facet_grid(drv ~ cyl)
+```
+
+## Overview
+
+During the week of --/--/2019 (Residential Curiculum Week ---) Residential Staff facilitated SEP ---. Across campus -- Resident Assistants (%) submitted the SEP --- Wrap-up Form, tagging a total of -- residents (%)
+
+**Include plot of staff submissions and RA tags ** 
+The \texttt{markdown} package of [R/RStudio](https://www.r-project.org/about.html) as well as [Nvivo](https://www.qsrinternational.com/nvivo/nvivo-products) were used to prepare this brief.
+## Results
+## Conclusion
+- Placeholder 1
+- Placeholder 2
+- Placeholder 3
