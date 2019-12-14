@@ -2,6 +2,7 @@
 title: "SEP -- Assessment Data"
 author: "Brief prepared by Joseph Diodato (jdiodato@iu.edu)"
 date: "Fall 2019"
+geometry: margin=0.5in
 output:
   pdf_document: default
 ---
