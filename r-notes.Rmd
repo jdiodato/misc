@@ -1,0 +1,28 @@
+---
+title: "R Notes"
+author: "Joseph Diodato"
+output: pdf_document
+urlcolor: "blue"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include = FALSE}
+library(xtable)
+```
+
+The purpose of this document is to keep track of my thoughts as I learn R, learn about different packages, and note some common syntax that I may want to reference. This document is designed primarily for my own use, but I hope that others may find value in it as well! Feel free to submit a pull request with any suggestions. 
+
+# Packages
+- [\texttt{ggrepel}](https://github.com/slowkow/ggrepel): Geom to avoid overlapping text labels in \texttt{ggplot2}
+
+# Notes 
+
+## Tables
+ - Can be a very heated topic in R! Is there a truly satisfying solution for PDF documents?
+ - Seems like [\texttt{stargazer}](https://cran.r-project.org/web/packages/stargazer/index.html) and [\texttt{xtable}](https://www.rdocumentation.org/packages/xtable/versions/1.8-4/topics/xtable) are the top contenders!
+
+# Code Snippets
+
