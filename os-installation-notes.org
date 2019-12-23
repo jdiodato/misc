@@ -1,0 +1,38 @@
+#+TITLE: Operating System Installation Notes for Linux Mint (.deb-based)
+#+AUTHOR:  Joseph Diodato 
+#+DATE: December 2019 
+
+From time to time, I find myself having to re-install an operating system on my
+laptop[fn:1]. I've gone through this process enough times now to know that I
+should probably document the steps I usually take, my essential packages,
+etc.. I currently use Linux Mint (a Debian-based distro) and these notes may
+reflect that. 
+
+* Preparing for Installation
+- Back up files onto an external hard drive! You never know what's important
+  until it's gone behavior. It's a good practice to supplement this with a good
+  cloud storage solution as well...
+
+* After Installing
+1. The first step that always gives me the hardest time is setting up the
+   University wifi in my apartment. It's fairly straightforward oin eduroam, but
+   more complicated in the rather old apartment that I currently occupy.
+** TODO include notes on setting up wifi once I get that sorted out.
+2. Make sure that the following packages and needed dependencies are installed:
+- R/RStudio
+  - tidyverse
+  - alr4
+- LibreOffice
+- emacs
+- git
+- Minecraft 
+
+3. Setting up R always seems to give me the most trouble. I believe it has to do
+   with an older version being stored in the Ubuntu package repository. 
+** TODO add notes on setting up R.
+
+...
+[fn:1] The blessing and curse of Linux distributions is that there is always so
+many to explore! However, I'm fairly certain that I will be settled in Linux
+Mint for the forseeable future. It allows me easy access to the power of Linux
+without spending /all/ of my computing time adjusting settings.
