@@ -1,4 +1,3 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -31,10 +30,7 @@ There are two things you can do about this warning:
 (package-initialize)
 ;-----------------------------------------------------------------------
 
-;; load zenburn theme
-(load-theme 'zenburn t)
-
-;; wraps text to the next line when typing.
+;; activate auto-fill mode
 (add-hook 'text-mode-hook 'auto-fill-mode)
 (setq-default fill-column 80)
 
@@ -46,10 +42,52 @@ There are two things you can do about this warning:
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (zenburn-theme markdown-mode darkokai-theme))))
+
+ 
+; '(package-selected-packages
+;   (quote
+;    (cyberpunk-2019-theme cyberpunk-theme fireplace zenburn-theme markdown-mode darkokai-theme))))
+;(custom-set-faces
+
+  '(package-selected-packages
+   (quote
+    (cyberpunk-2019-theme  markdown-mode))))
 (custom-set-faces
+
+
+
+ 
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/") t)
+
+ (load-theme 'cyberpunk t)
+
+
+(load "auctex.el" nil t t)
+     (load "preview-latex.el" nil t t)
+
+(setq TeX-PDF-mode t)
+
+(setq latex-run-command "pdflatex")
+
+(setq python-shell-interpreter "python3")
+(put 'erase-buffer 'disabled nil)
+
+(setq load-path (append (list (expand-file-name "~/site-lisp")) load-path))
+
+(when (version<= "26.0.50" emacs-version )
+  (global-display-line-numbers-mode))
+
+(global-linum-mode t) ;; Enables line numbers globally
+
+
+(setq inhibit-startup-message t) ;; Hides the startup message
+
+
+
